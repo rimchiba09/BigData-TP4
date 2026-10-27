@@ -1,0 +1,9 @@
+
+services:
+  data-analysis:
+    build: .
+    image: chebarim/talkingdata-analysis:v1
+    container_name: tp04-analysis
+    volumes:
+      - ./data:/app/data:ro
+    restart: "no"
